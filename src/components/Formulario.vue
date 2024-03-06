@@ -9,6 +9,10 @@
         sintomas: ''
     });
 
+    const validar = () => {
+        console.log('Validando...')
+    }
+
 </script>
 
 <template>
@@ -21,6 +25,7 @@
         <form
             action=""
             class="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
+            @submit.prevent = "validar"
         
         >
             <div class="mb-5 ">
