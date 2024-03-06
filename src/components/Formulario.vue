@@ -10,7 +10,13 @@
     });
 
     const validar = () => {
-        console.log('Validando...')
+        if(Object.values(paciente).includes('')){
+            console.log("Si estan vacios ...")
+            return
+        }
+
+        console.log("Agregando ...")
+
     }
 
 </script>
