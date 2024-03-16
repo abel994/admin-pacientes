@@ -2,14 +2,6 @@
     import {reactive} from 'vue'
     import Alerta from './Alerta.vue'
 
-    const paciente = reactive({
-        nombre: '',
-        propietario: '',
-        email: '',
-        alta: '',
-        sintomas: ''
-    });
-
     const alerta = reactive({
         tipo: '',
         mensaje: '',
@@ -58,7 +50,6 @@
                     id="mascota"
                     placeholder="Nombre de la mascota"
                     class="border-2 w-full p-2 mt-2 placeholder-gray-400 rouded-md"
-                    v-model="paciente.nombre"
                 >
             </div>
 
@@ -75,7 +66,6 @@
                     id="propietario"
                     placeholder="Nombre del propietario"
                     class="border-2 w-full p-2 mt-2 placeholder-gray-400 rouded-md"
-                    v-model="paciente.propietario"
                 >
             </div>
 
@@ -92,7 +82,6 @@
                     id="email"
                     placeholder="email del propietario"
                     class="border-2 w-full p-2 mt-2 placeholder-gray-400 rouded-md"
-                    v-model="paciente.email"
                 >
             </div>
 
@@ -108,7 +97,6 @@
                     name="alta"
                     id="alta"
                     class="border-2 w-full p-2 mt-2 placeholder-gray-400 rouded-md"
-                    v-model="paciente.alta"
                 >
             </div>
 
@@ -124,7 +112,6 @@
                     id="sintomas"
                     placeholder="Describe los sintomas"
                     class="border-2 w-full p-2 mt-2 placeholder-gray-400 rouded-md h-40"
-                    v-model="paciente.sintomas"
                 />
             </div>
             <input
