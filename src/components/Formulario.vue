@@ -18,7 +18,7 @@
     const validar = () => {
         if(Object.values(paciente).includes('')){
             alerta.mensaje = 'Guardado correctamente'
-            alerta.tipo = 'exito'
+            alerta.tipo = 'error'
         }
 
         console.log("Agregando ...")
