@@ -36,10 +36,11 @@
         if(Object.values(props).includes('')){
             alerta.mensaje = 'Todos los campos son obligatorios'
             alerta.tipo = 'error'
-        }
+            
+        }else{
 
         emit('guardar-paciente')
-
+        }
     }
 
 </script>
