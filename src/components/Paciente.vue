@@ -12,10 +12,6 @@ defineProps({
 </script>
 
 <template>
-    <p class="text-lg mt-5 text-center mb-10">
-            Añade pacientes y
-            <span class="text-indigo-600 font-bold">Adminístralos</span>
-    </p>
 
     <div class="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
         <p class="font-bold mb-3 text-gray-700 uppercase">ID:

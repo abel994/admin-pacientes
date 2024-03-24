@@ -57,9 +57,14 @@
           v-model:alta="paciente.alta"
           v-model:sintomas="paciente.sintomas"
           @guardar-paciente = "guardarPaciente"
+          :id = "paciente.id"
         />
         <div class="md:w-1/2 md:h-screen overflow-y-scroll">
           <h3 class="font-black text-3xl text-center">Administra tus Pacientes</h3>
+          <p class="text-lg mt-5 text-center mb-10">
+            Añade pacientes y
+            <span class="text-indigo-600 font-bold">Adminístralos</span>
+          </p>
           <div v-if="pacientes.length > 0">
             <Paciente
               v-for="paciente in pacientes"
