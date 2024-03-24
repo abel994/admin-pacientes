@@ -28,7 +28,10 @@
         alta: '',
         sintomas: ''
       })
+    }
 
+    const actualizarPaciente = (id) => {
+      console.log("Actualizando ...", id)
     }
 
 </script>
@@ -51,6 +54,7 @@
             <Paciente
               v-for="paciente in pacientes"
               :paciente="paciente"
+              @actualizar-paciente = "actualizarPaciente"
             />
 
           </div>
