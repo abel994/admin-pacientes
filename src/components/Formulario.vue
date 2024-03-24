@@ -36,11 +36,20 @@
         if(Object.values(props).includes('')){
             alerta.mensaje = 'Todos los campos son obligatorios'
             alerta.tipo = 'error'
-            
-        }else{
-
-        emit('guardar-paciente')
+            return
         }
+        
+        emit('guardar-paciente')
+        
+        alerta.mensaje = 'Paciente almacenado correctamente'
+        alerta.tipo = 'exito'
+
+        setTimeout(() => {
+            Object.assign(alerta, {
+                tipo: '',
+                mensaje: ''
+            }) 
+        },3000)
     }
 
 </script>
